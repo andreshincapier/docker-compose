@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+
+  samba:
+    image: dperson/samba:rpi
+    restart: always
+    command: '-u "andreshincapier;andreshincapier;1000;andreshincapier;1000" -s "media;/media;yes;no;no;andreshincapier;andreshincapier;andreshincapier;comment"'
+    stdin_open: true
+    tty: true
+    ports:
+      - 139:130
+      - 445:445
+    volumes:
+      - /usr/share/zoneinfo/America/Bogota:/etc/localtime
+      - /media/pi/FILES:/media:rw

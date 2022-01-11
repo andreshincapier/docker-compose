@@ -1,0 +1,11 @@
+version: "2"
+services:
+  duckdns:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    environment:
+      - TZ=America/Bogota
+      - SUBDOMAINS=andreshincapier
+      - TOKEN=68db9af1-9eef-4e23-90aa-62b03daf180e
+      - LOG_FILE=false #optional
+    restart: always
