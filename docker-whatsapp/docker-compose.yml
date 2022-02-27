@@ -1,0 +1,9 @@
+version: "2"
+services:
+  whatsapp:
+    image: andreshincapie/whatsapp
+    container_name: whatsapp
+    ports:
+      - "9000:9000"
+    restart: always
+
