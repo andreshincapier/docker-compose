@@ -5,7 +5,7 @@ services:
     container_name: duckdns
     environment:
       - TZ=America/Bogota
-      - SUBDOMAINS=andreshincapier
-      - TOKEN=68db9af1-9eef-4e23-90aa-62b03daf180e
+      - SUBDOMAINS=subdomain
+      - TOKEN=token
       - LOG_FILE=false #optional
     restart: always
