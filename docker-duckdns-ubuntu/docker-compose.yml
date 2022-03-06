@@ -1,0 +1,11 @@
+version: "2.1"
+services:
+  duckdns:
+    image: ghcr.io/linuxserver/duckdns
+    container_name: DuckDNS
+    environment:
+      - TZ=America/Bogota
+      - SUBDOMAINS=some domain
+      - TOKEN=token
+      - LOG_FILE=false #optional
+    restart: always
