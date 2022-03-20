@@ -6,6 +6,6 @@ services:
     environment:
       - TZ=America/Bogota
       - SUBDOMAINS=subdomain
-      - TOKEN=token
+      - TOKEN=token #Token from https://www.duckdns.org/ 
       - LOG_FILE=false #optional
     restart: always
