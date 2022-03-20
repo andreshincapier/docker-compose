@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  awtrix:
+    image: whyet/awtrix2
+    restart: always
+    ports:
+      - "7000:7000"
+      - "7001:7001"
+      - "5568:5568"
+
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=America/Bogota
+      - JAVA_TOOL_OPTIONS="-Duser.language=en -Duser.country=CO"
+      - AWTRIX_BETA=false
+      - AUTOUPDATE=true
