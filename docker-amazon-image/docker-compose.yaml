@@ -1,0 +1,8 @@
+version: "3"
+services:
+  amazon:
+    container_name: amazonlinux
+    image: amazonlinux
+    restart: on-failure
+    command: ["sleep","infinity"]
+
